@@ -48,12 +48,102 @@ table {
 	border-spacing: 0;
 }
 
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Six+Caps|Source+Sans+Pro&display=swap');
+//Variables 
+@main-font:'Source Sans Pro', sans-serif;
+@header-font: 'Six Caps', sans-serif;
+
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+html{
+	font-size: 62.5%;
+}
+
+h1 {
+	font-size: 10rem;
+	font-family: @header-font;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+h2 h3 h4 {
+	font-size: 5rem;
+}
+
+body{
+	font-family:@main-font;
+	font-size: 2rem;
+}
+
+.container {
+  width: 880px;
+  /* TB LR */
+  margin: 0 auto;
+}
+
+
+
+/* header */
+header {
+	display: flex;
+	justify-content: space-between;
+
+	nav {
+		display: flex;
+		width: 691px;
+		margin-top: 35px;
+	  }// this closes the nav
+
+	  a {
+		margin-right: 65px;
+		font-size: 14px;
+		color: gray;
+		text-decoration: none;
+
+	  }// this closes the links inside of the nav
+
+
+  }// this closes the header 
+  
+  
+ 
+@main-color:pink;
+
+body{
+	background-color:@main-color;
+}
+
+main-content {
+	border-top: 1px solid black;
+	margin-top: 76px;
+	padding-top: 39px;
+
+	.top-content {
+		display: flex;
+		justify-content: space-between;
+
+		.text-content {
+			width: 410px;
+		  }// this closes the text-content
+
+	  }// this closes the top-content 
+	  
+  }// this closes the header 
+  
+  
+  button {
+    border: 2px solid black;
+    width: 10%;
+    padding: 8px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 0;
+}
