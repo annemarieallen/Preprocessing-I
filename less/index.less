@@ -57,13 +57,13 @@ html, body {
     height: 100%;
 }
 
-
-
-@primary-color: pink;
-
-header {
-    background-color: @primary-color;
+.container {
+	width: 100%;
+	margin: 0 auto;
 }
+
+@primary-color: red;
+
 
 h1 {
     font-size: 25px;
@@ -73,3 +73,53 @@ p {
     border: 1px solid black;
     padding: 3%;
 }
+
+header {
+	background-color: pink;
+
+	nav {//nav in header 
+		display: flex; 
+		justify-content: space-evenly;
+		width: 80%;
+		vertical-align: top;
+		margin-top: 35px;
+
+		a {
+			margin-left: 65px;
+			font-size: 15px;
+			color: black;
+			text-decoration: none;
+		}// anchors in nav in header
+	}// nav in header
+}//end header 
+
+.about-description{
+	border-bottom: dashed 2px;
+    margin-bottom: 20px;
+	margin-top: 20px;
+
+	.img {
+		justify-content: center;
+	}//.img in about-description section
+
+}//end .about-description 
+
+.skills-content {// .skills-content 
+	display: flex;
+
+	h3{
+		margin-top: 15px;
+	} // h3 in .skills-content section 
+
+	p{
+		margin-bottom: 15px;
+	}// p's in .skill-content 
+
+	.text-content{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}//text-content in .skill-content 
+
+}// end .skills-content 
