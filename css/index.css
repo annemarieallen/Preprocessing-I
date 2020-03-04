@@ -140,9 +140,10 @@ body {
 }
 h1 {
   font-size: 25px;
+  display: flex;
+  justify-content: center;
 }
 p {
-  border: 1px solid black;
   padding: 3%;
 }
 header {
@@ -171,16 +172,19 @@ header nav a {
 }
 .skills-content {
   display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
 }
 .skills-content h3 {
-  margin-top: 15px;
+  margin-top: 3%;
 }
 .skills-content p {
-  margin-bottom: 15px;
+  margin-bottom: 3%;
 }
 .skills-content .text-content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  width: 49%;
 }

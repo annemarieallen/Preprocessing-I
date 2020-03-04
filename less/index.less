@@ -66,11 +66,12 @@ html, body {
 
 
 h1 {
-    font-size: 25px;
+	font-size: 25px;
+	display: flex;
+	justify-content: center;
 }
 
 p {
-    border: 1px solid black;
     padding: 3%;
 }
 
@@ -93,6 +94,7 @@ header {
 	}// nav in header
 }//end header 
 
+
 .about-description{
 	border-bottom: dashed 2px;
     margin-bottom: 20px;
@@ -106,13 +108,15 @@ header {
 
 .skills-content {// .skills-content 
 	display: flex;
+	flex-wrap: wrap;
+	padding: 2%;
 
 	h3{
-		margin-top: 15px;
+		margin-top: 3%;
 	} // h3 in .skills-content section 
 
 	p{
-		margin-bottom: 15px;
+		margin-bottom: 3%;
 	}// p's in .skill-content 
 
 	.text-content{
@@ -120,6 +124,7 @@ header {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
+		width: 49%;
 	}//text-content in .skill-content 
 
 }// end .skills-content 
