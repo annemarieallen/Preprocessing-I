@@ -62,7 +62,21 @@ html, body {
 	margin: 0 auto;
 }
 
-@primary-color: red;
+//variables
+@theme-color-1: lavender;
+@standard-padding: 3%;
+
+//mixins
+.flex-center(){
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+}
+
+.margin-mix(){
+	margin: 3%; 
+	padding: 2%;
+} //delete if not using
 
 
 h1 {
@@ -76,7 +90,8 @@ p {
 }
 
 header {
-	background-color: pink;
+
+	background-color: @theme-color-1;
 
 	nav {//nav in header 
 		display: flex; 
@@ -84,6 +99,7 @@ header {
 		width: 80%;
 		vertical-align: top;
 		margin-top: 35px;
+		.margin-mix();
 
 		a {
 			margin-left: 65px;
@@ -99,10 +115,18 @@ header {
 	border-bottom: dashed 2px;
     margin-bottom: 20px;
 	margin-top: 20px;
+	.flex-center();
+	flex-wrap: wrap;
 
 	.img {
 		justify-content: center;
 	}//.img in about-description section
+
+	.about-me {
+		background-color: @theme-color-1;
+		.margin-mix();
+		
+	}// .about-me class in .about-description 
 
 }//end .about-description 
 
