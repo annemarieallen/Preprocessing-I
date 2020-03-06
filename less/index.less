@@ -101,11 +101,26 @@ header {
 		margin-top: 35px;
 		.margin-mix();
 
+		@media(max-width:500px){
+			display: flex; 
+			flex-direction: column;
+			align-items: center;
+		}//media query for max-width:500px for nav in header
+
 		a {
 			margin-left: 65px;
 			font-size: 15px;
 			color: black;
 			text-decoration: none;
+
+			@media(max-width:500px){
+				margin-top: 5px;
+				margin-bottom: 5px;
+				font-size: 15px;
+				padding: 10px 80px;
+				border-top: solid grey 1px; 
+			}// media query for max-width:500px for anchors in nav in header
+
 		}// anchors in nav in header
 	}// nav in header
 }//end header 
@@ -118,6 +133,7 @@ header {
 	.flex-center();
 	flex-wrap: wrap;
 
+	
 	.img {
 		justify-content: center;
 	}//.img in about-description section
@@ -134,13 +150,21 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 2%;
+	border-bottom: dashed 2px;
+
+	@media(max-width:500px){
+		.flex-center();
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
 
 	h3{
-		margin-top: 3%;
+		margin-top: 2%;
 	} // h3 in .skills-content section 
 
 	p{
 		margin-bottom: 3%;
+		text-align: center;
 	}// p's in .skill-content 
 
 	.text-content{
@@ -149,6 +173,43 @@ header {
 		flex-wrap: wrap;
 		justify-content: space-evenly;
 		width: 49%;
-	}//text-content in .skill-content 
 
+
+	}//text-content in .skill-content 
 }// end .skills-content 
+
+.experience {
+	.margin-mix();
+
+	.experience-text{
+
+		h2{
+			font-size: 1.5rem;
+			padding: 2%;
+			text-align: center;
+	
+		}// h2 in .experience-text in .experience section
+
+		p{
+			
+		}//paragraphs in .experience-text in .experience section 
+
+	}//experience-text in .experience section
+}// end .experience section
+
+.contact{
+	background-color: @theme-color-1;
+	text-align: center;
+
+	h4{
+		font-size: 1.2rem;
+		.margin-mix();
+		text-align:center;
+	}
+
+	p{
+		font-size: 1rem;
+		.margin-mix();
+	}
+
+}
